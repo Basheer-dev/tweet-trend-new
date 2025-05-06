@@ -26,7 +26,7 @@ pipeline {
                             {
                               "pattern": "target/*.jar",
                               "target": "libs-release-local/com/valaxy/demo-workshop/${env.BUILD_ID}/",
-                              "flat": "false",
+                              "flat": "true",
                               "props" : "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
                             }
