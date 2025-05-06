@@ -24,7 +24,7 @@ pipeline {
                      def uploadSpec = """{
                           "files": [
                             {
-                              "pattern": "target/*.jar",
+                              "pattern": "jarstaging/(*)",
                               "target": "valaxy-libs-release/{1}",
                               "flat": "false",
                               "props" : "${properties}",
